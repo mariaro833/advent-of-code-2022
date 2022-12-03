@@ -1,3 +1,3 @@
-# [Happy Merry Christmas!](https://youtu.be/ATFrpZexZBQ) 
+## [Happy Merry Christmas!](https://youtu.be/ATFrpZexZBQ) 
 
-### [Advent to code 2022](https://adventofcode.com/)
+### [Advent of code 2022](https://adventofcode.com/)
