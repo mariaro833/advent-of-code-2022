@@ -2,9 +2,14 @@
 # from hypothesis.strategies import lists, integers
 # from .. import puzzle_0
 
-# @given(lists(integers()))
+# @given(lists(lists(integers())))
 # def test_0_day_1(params):
-#     a = map()
-#     result = puzzle_0.find_max(params)
+#     fruit = ""
+
+#     for ele in params:
+#         fruit += ele
+#         fruit += '\n'
+    
+#     print(fruit)
     
 
