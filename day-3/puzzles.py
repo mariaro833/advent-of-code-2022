@@ -27,7 +27,6 @@ def comp_half_string(list):
             sum += calc_priorities([elem for elem in set(items_to_check) if(elem in rucksack_1)][0])
 
 def comp_three_lines(list):
-    items_to_check = []
     sum = 0
     luggage = re.split('\n', list)
     n = 0
