@@ -30,18 +30,11 @@ def comp_three_lines(list):
     items_to_check = []
     sum = 0
     luggage = re.split('\n', list)
-    i = 3
-    for rucksack in luggage:
-        if i % 3 == 0:
-            for item in rucksack:
-                items_to_check.extend(item)
-                #print(item_to_check)
-        elif i % 3 == 1:
-            items_to_check = [elem for elem in set(items_to_check) if(elem in rucksack)]
-        else:
-            sum += calc_priorities([elem for elem in set(items_to_check) if(elem in rucksack)][0])
-            items_to_check.clear()
-        i += 1
+    n = 0
+    for rucksack in range(0, len(luggage)-1, 3):
+        n = ''.join(set.intersection(*map(set, luggage[rucksack:rucksack + 3])))
+        print (n)
+        sum += calc_priorities(n)
     print (sum)
 
 def main() -> None:
